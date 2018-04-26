@@ -12,17 +12,21 @@
       <h1>Multiplication Table</h1>
       <script>
          // output the header row
+
+        const x=prompt("Enter the amount of dimensions!");
+        
+
          document.write('<span class="cell header">X</span>');
-         for(i = 1; i <= 10; i++) {
+         for(i = 1; i <= x; i++) {
             document.write('<span class="cell header">' + i + '</span>');
          }
          document.write('<br>');
 
          // TODO: Write two nested for loops to output the rest of the multiplication table
 
-        for(let i = 1; i <= 10; i++){
+        for(let i = 1; i <= x; i++){
             document.write('<span class="cell header">' + i + '</span>');
-            for(let j =1; j <= 10; j++){
+            for(let j =1; j <= x; j++){
                 document.write('<span class="cell">' + j * i + '</span>');
             }
             document.write('<br>');
